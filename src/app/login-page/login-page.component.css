@@ -1,0 +1,11 @@
+.authentication-card {
+  max-width: 30%;
+  resize: none;
+  margin: 0 auto;
+  background-color: #c0c0c0;
+}
+
+.authentication-card-container {
+  min-height: 65vh;
+  resize: none;
+}

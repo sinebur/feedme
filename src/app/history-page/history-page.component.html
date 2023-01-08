@@ -1,0 +1,56 @@
+<div style="margin-top:160px">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let sched of schedules">
+      <mat-expansion-panel-header style="height: 120px">
+        <mat-card-header>
+          <mat-card-title-group>
+            <div class="mycustomfont">
+              <br />{{sched.startdate | date: 'dd/MM/yyyy'}} <br /> - {{sched.enddate | date: 'dd/MM/yyyy'}}<br />
+            </div>
+            <div class="mycustomfont">
+              <br />StartWeight: {{sched.startweight}}<br />
+              TargetWeight: {{sched.targetweight}}     
+            </div>
+          </mat-card-title-group>
+        </mat-card-header>
+      </mat-expansion-panel-header>
+      <mat-card class="example-card1">
+        <mat-expansion-panel *ngFor="let day of sched.schedCards">
+          <mat-expansion-panel-header style="height: 120px">
+            <mat-card-header>
+              <mat-card-title-group>
+                <div class="dayofweek">
+                  <br />{{day.dayName}}<br />
+                </div>
+                  <div class="mycustomfont">
+                    <br /> {{day.date | date: 'dd/MM/yyyy'}}<br />
+                    kCal: {{day.cals}}
+                  </div>
+              </mat-card-title-group>
+            </mat-card-header>
+          </mat-expansion-panel-header>
+          <mat-card class="example-card" *ngFor="let card of day.cards">
+            <mat-card-header>
+              <div class="dishtime">
+                {{card.title}}:    €{{card.price}}
+              </div>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="dishtitle">
+                <b>{{card.dishtitle}}</b>
+              </div>
+              <div class="ingridients">
+                Ingridients:
+              </div>
+                <p>{{card.ingridient}}</p>
+                <div class="ingridients">
+                  Description: <br />
+                </div>
+                <p>{{card.description}}</p>
+            </mat-card-content>
+          </mat-card>
+        </mat-expansion-panel>
+      </mat-card>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

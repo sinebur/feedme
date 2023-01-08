@@ -1,0 +1,87 @@
+.card-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.mat-card-title-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.mat-card-subtitle {
+  float: right;
+}
+
+mat-card-title {
+  min-width: 200px;
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+  float: right;
+}
+/*mat-card-title-group {
+  display: flex;
+  justify-content: space-between;
+}*/
+/*mat-card-subtitle {*/
+  /*  margin-left: auto;*/
+  /*text-align: right;
+  text-align: right;
+  float: right;
+  align-content: end;
+}*/
+
+/*.date{
+    text-align:right;
+    float:right;
+    align-content:end;
+    position:
+}
+*/
+.mycustomfont {
+  margin-left: 20px;
+  font: italic small-caps bold 16px/2 cursive;
+  margin-bottom: 15px;
+}
+
+.dayofweek {
+  font: italic small-caps bold 24px/2 cursive;
+  margin-bottom: 50px;
+}
+
+.dishtime {
+  font: italic small-caps bold 20px/2 cursive;
+  margin-right: 15px;
+  align-content: flex-start;
+}
+
+.ingridients {
+  font: italic small-caps bold 16px/2 cursive;
+}
+
+.fetchedingridients {
+  color: black;
+}
+
+.dishtitle {
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
+}
+
+.cardheader {
+  background-color: #c0c0c0;
+}

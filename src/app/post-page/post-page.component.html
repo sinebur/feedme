@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<div style="margin-top: 150px">
+  <html>
+  <head>
+    <title>Create your own recipe!</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="testbox">
+      <form #userlogin = "ngForm" (ngSubmit) = "recipe(userlogin.value)"  action="/">
+        <div class="banner">
+          <h1>Create your own recipe!</h1>
+        </div>
+        <div class="item">
+          <p>Title of the recipe!<span class="required">*</span></p>
+          <input type="text" name="title"  ngModel />
+        </div>
+        <div class="item">
+          <p>Description<span class="required">*</span></p>
+          <input type="text" name="description" required  ngModel/>
+        </div>
+        <div class="item">
+          <p>Ingredients<span class="required">*</span></p>
+          <input type="text" name="ingredients" required ngModel />
+        </div>
+        <div class="question">
+          <p>The specifics of your recipe<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="checkbox" name="hasdairy" required ngModel /> <span>Has dairy</span></label>
+            <label><input type="checkbox" name="hasfish" required ngModel /> <span>Has fish</span></label>
+            <label><input type="checkbox" name="haschicken" required ngModel /> <span>Has chicken</span></label>
+            <label><input type="checkbox" name="haspork" required ngModel /> <span>Has pork</span></label>
+            <label><input type="checkbox" name="hasbeef" required ngModel /> <span>Has beef</span></label>
+            <label><input type="checkbox" name="hasnuts" required ngModel /> <span>Has nuts</span></label>
+            <label><input type="checkbox" name="hasfruits" required ngModel /> <span>Has fruits</span></label>
+            <label><input type="checkbox" name="hasvegetables" required ngModel /> <span>Has vegetables</span></label>
+            <label><input type="checkbox" name="hascereals" required ngModel /> <span>Has cereals</span></label>            
+            <label><input type="checkbox" name="isbreakfast" required ngModel /> <span>Is Breakfast</span></label>
+            <label><input type="checkbox" name="isdinner" required ngModel /> <span>Is Dinner</span></label>
+            <label><input type="checkbox" name="islunch" required ngModel /> <span>Is Lunch</span></label>
+          </div>
+        </div>
+        <div class="item">
+          <p>Price<span class="required">*</span></p>
+          <input type="text" name="price" required ngModel/>
+        </div>
+        <div class="item">
+          <p>Calories<span class="required">*</span></p>
+          <input type="text" name="calories" required ngModel/>
+        </div>
+
+        <div class="btn-block" style="margin-bottom: 100px">
+          <button type="submit" value="submit">Post</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+</div>
